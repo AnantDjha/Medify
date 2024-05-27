@@ -1,0 +1,86 @@
+.firstClass{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* background-color: aqua; */
+    justify-content: center;
+    /* align-items: center; */
+    /* height:80vh; */
+    margin-top:100px ;
+}
+img{
+    width: 30%;
+    height:530px;
+    /* mix-blend-mode: color-burn; */
+    border :2px solid rgb(252, 198, 3);
+    border-radius: 10px;
+}
+.second{
+    display: flex;
+    width:30%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    /* height:; */
+    justify-content: start;
+/*    
+    border:2px solid red; */
+}
+.rate{
+    color:black
+}
+b{
+    color:rgb(224, 180, 58);
+}
+h2{
+    margin:10px 0;
+    color: rgb(238, 95, 0);
+}
+i{
+    font-size: 18px;
+}
+p{
+    color:rgb(11, 203, 11)
+}
+.but{
+    display: flex;
+    justify-content: center;
+    margin:10px 0;
+}
+button{
+    width:80%;
+    /* padding:5px; */
+    border:none;
+    background-color: yellow;
+    border-radius: 10px;
+    /* padding: 10px; */
+}
+button:hover{
+    background-color: rgb(210, 210, 0);
+    
+}
+@media only screen and (max-width:450px)   {
+    .firstClass{
+        flex-direction: column;
+        margin-top: 10px;
+        /* background-color: aqua; */
+        flex-flow: column;
+align-items: center;
+    }
+    img{
+        width: 95%;
+        height:20rem;
+    }
+    .second{
+        width:95%;
+        margin-top:10px;
+        flex-wrap: wrap;
+        overflow: scroll;
+        padding:10px;
+        padding-left:0;
+    }
+    button{
+        padding:0;
+    }
+    
+}

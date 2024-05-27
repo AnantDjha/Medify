@@ -1,0 +1,32 @@
+.navBar{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.navBar a h4{
+    padding: 1em;
+}
+
+
+li{
+    list-style: none;
+    
+}
+a {
+    text-decoration: none;
+    color:red;
+
+}
+
+
+.cart a{
+    font-size: 2em;
+    padding-bottom: 12px;
+
+}
+a:hover{
+    background-color: red;
+    color:white;
+}

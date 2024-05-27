@@ -1,0 +1,20 @@
+<app-search-bar></app-search-bar>
+<app-tags-compo></app-tags-compo>
+<ul>
+    <li *ngFor="let i of medicineImages">
+        <a routerLink="/foodpage/{{i.id}}">
+            <img src={{i.url}} alt="" height="230px" width="432px">
+           
+            <div>
+                <h3><b>{{i.name}}</b> - <i>{{i.quantity}}</i></h3>
+            <h4>{{i.price| currency:"INR"}} <small> M.R.P</small> : <small>{{"("+i.discount+")"}}</small></h4>
+           
+
+
+            </div>
+           
+       
+        
+        </a>
+    </li>
+</ul>

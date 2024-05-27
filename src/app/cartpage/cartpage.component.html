@@ -1,0 +1,41 @@
+<div class="container-hai">
+    <ul *ngIf="cartser.cartItem.items.length != 0">
+        <li *ngFor="let i of cartser.cartItem.items">
+            <div>
+                <a routerLink="/foodpage/{{i.medi.id}}">
+                    <img src="{{i.medi.url}}" alt="">
+    
+                </a>
+            </div>
+            <div class="name">
+                <h3>{{i.medi.name}}</h3>
+            </div>
+            <div>
+                <h5>{{i.medi.price | currency:"INR"}}</h5>
+            </div>
+            <div>quantity
+                <select #qCh (change)="changeQuantity(i,qCh.value)">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div>
+                <button class="btn1" (click)="remmoveFromCart(i)">Remove</button>
+            </div>
+        </li>
+    </ul>
+    <div class="checkout">
+        <div class="a">
+            {{cartser.cartItem.items.length}}
+        </div>
+        <div class="b">
+            {{cartser.cartItem.getTotalPrice | currency :"INR"}}
+        </div>
+        <div>
+            <button class="proceed" routerLink="/checkout/page">proceed to Checkout</button>
+        </div>
+    </div>
+</div>

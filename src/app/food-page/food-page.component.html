@@ -1,0 +1,19 @@
+<div class="firstClass">
+    <img [src] = "medi.url" alt="">
+    <div class="second">
+        <h4>{{medi.name}}-{{medi.detail}}</h4>
+       
+        <p class="rate"><b>Brand : </b>{{medi.brand}}</p>
+        <p class="rate"><b>Rating : </b>{{medi.rate}}</p>
+        <h2>{{medi.price | currency :'INR'}} <i> M.R.P</i></h2>
+        <p>Get upto {{medi.discount}} </p>
+        <h5>About this Item</h5>
+        <ul>
+            <li *ngFor="let l of medi.about">{{l}}</li>
+        </ul>
+        <div class="but" (click) ="addAndNavigate()"><button>Add to cart</button></div>
+        
+        
+    </div>
+</div>
+
